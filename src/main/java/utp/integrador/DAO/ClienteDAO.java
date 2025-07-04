@@ -13,7 +13,7 @@ public class ClienteDAO implements IClienteDAO {
 
     //listar
     @Override
-    public Cliente listarClientes() {
+    public List<Cliente> listarClientes() {
         List<Cliente> clientes = new ArrayList<>();
         var sql = "SELECT * FROM tbl_cliente ORDER BY id";
         try (Connection con = Conexion.getConexion()) {
