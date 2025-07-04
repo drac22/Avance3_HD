@@ -4,7 +4,7 @@ package utp.integrador.Model;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-public class Conexion {
+public class Conexiones {
     public static Connection getConexion(){
         Connection conexion = null;
         var bd = "sistemagestioncanchas";

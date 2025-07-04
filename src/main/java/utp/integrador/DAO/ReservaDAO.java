@@ -15,7 +15,7 @@ import utp.integrador.Model.Reserva;
 
 public class ReservaDAO {
 
-    public boolean reservaDisponible(int canchaId, LocalDate fecha, LocalTime horaInicio, LocalTime horaFin) {
+    public Reserva reservaDisponible(int canchaId, LocalDate fecha, LocalTime horaInicio, LocalTime horaFin) {
         String sql = "SELECT COUNT(*) FROM tbl_reserva "
                 + "WHERE idCancha = ? AND fecha = ? "
                 + "AND (? < horaFinal AND ? > horaInicio)";
